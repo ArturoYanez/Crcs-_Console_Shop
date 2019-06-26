@@ -1,58 +1,221 @@
-@charset "UTF-8";
+/*Fuentes: MOgra - Pt Sans*/;
 
-@font-face {
-  font-family: "console";
-  src:url("../assets/fonts/console.eot");
-  src:url("../assets/fonts/console.eot?#iefix") format("embedded-opentype"),
-    url("../assets/fonts/console.woff") format("woff"),
-    url("../assets/fonts/console.ttf") format("truetype"),
-    url("../assets/fonts/console.svg#console") format("svg");
-  font-weight: normal;
-  font-style: normal;
+/*-----------------Estilos del header-----------------*/
 
+.main-header {
+	width: 100%;
 }
-
-[data-icon]:before {
-  font-family: "console" !important;
-  content: attr(data-icon);
-  font-style: normal !important;
-  font-weight: normal !important;
-  font-variant: normal !important;
-  text-transform: none !important;
-  speak: none;
-  line-height: 1;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.logo {
+	font-size: 1.8em;
+	color: #0170A8;
+	padding: 10px;
+	font-family: "Mogra", cursive;
+	font-weight: 100;
 }
-
-[class^="icon-"]:before,
-[class*=" icon-"]:before {
-  font-family: "console" !important;
-  font-style: normal !important;
-  font-weight: normal !important;
-  font-variant: normal !important;
-  text-transform: none !important;
-  speak: none;
-  line-height: 1;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.main-header__contactInfo__phone {
+	background: #0170A8;
+	color: white;
+	margin: 0 auto;
+	padding: 10px;
+}
+.main-header__contactInfo__address {
+	padding: 10px;
+	margin: 0;
+}
+.main-header [class*="icon-"]:before {
+	position: relative;
+	top: 2px;
+	right: 5px;
 }
 
-.icon-menu:before {
-  content: "\61";
+/*-----------------Estilos del menu-----------------*/
+.main-nav {
+	width: 100%;
+	position: relative;
+	z-index: 2000;
+	padding: 10px;
 }
-.icon-facebook:before {
-  content: "\62";
+.icon-menu {
+	display: block;
+	color: white;
+	border: 1px solid white;
+	border-radius: 3px;
+	width: 40px;
+	height: 40px;
+	line-height: 42.5px;
+	text-align: center;
+	cursor: pointer;
+	font-size: 1.5em;
 }
-.icon-phone:before {
-  content: "\63";
+
+.social-icon {
+	display: flex;
+	justify-content: space-between;
 }
-.icon-mail:before {
-  content: "\64";
+.social-icon [class*="icon-"] {
+	color: black;
+	margin-left: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 1.3em;
+	width: 35px;
+	height: 35px;
+	background: white;
+	border-radius: 50%;
 }
-.icon-location:before {
-  content: "\65";
+.social_icon__link {
+	text-decoration: none;
 }
-.icon-whatsapp:before {
-  content: "\66";
+.menu {
+	position: absolute;
+	top: 60px;
+	left: 0;
+	width: 100%;
+	background: rgba(0,0,0,.85);
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	text-align: center;
+	height: 0;
+	overflow: hidden;
+	transition: height .3s linear;
 }
+.menu__link {
+	display: block;
+	padding: 15px;
+	color: white;
+	text-decoration: none;
+}
+.menu__link:hover {
+	background: #0170A8;
+}
+.menu__link--select {
+	background: #0170A8;
+}
+.mostrar {
+	height: 196px;
+}
+
+/*-----------------Estilos del banner-----------------*/
+
+.banner {
+	margin-top: -55px;
+	position: relative;
+}
+.banner:before {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.6);
+	z-index: 1000;
+	top: 0;
+}
+.banner__img {
+	width: 100%;
+	height: 500px;
+	object-fit: cover;
+}
+.banner__content {
+	width: 90%;
+	color: white;
+	text-align: center;
+	position: absolute;
+	z-index: 1500;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	font-size: 1,5em;
+	font-weight: bold;
+}
+
+/*-----------------Estilos del principales-----------------*/
+
+.group--color .container {
+	background: #0170A8;
+	color: white;
+	padding: 10px;
+	text-align: center;
+}
+.main__title {
+	margin: 15px 0;
+	font-size: 1.8em;
+	font-family: "Mogra", cursive;
+	font-weight: 100
+}
+.main__txt {
+	padding: 10px;
+}
+.column__title {
+	font-size: 1.3em;
+}
+
+.main__about__Description .column:nth-child(2) {
+	padding: 10px;
+}
+.btn {
+	display: block;
+	text-align: center;
+	text-decoration: none;
+	width: 120px;
+	background: #0170A8;
+	color: white;
+	padding: 10px;
+	margin: 10 auto;
+}
+.group__title {
+	font-family: "Mogra", cursive;
+	text-align: center;
+	font-weight: 100;
+	font-style: 1.8em;
+	margin: 30px;
+}
+.oferts-special .column {
+	text-align: center;
+	margin-bottom: 30px;
+}
+.oferts-special__img {
+	margin: auto;
+	max-width: 350px;
+}
+.oferts-special__title {
+	font-style: 1.3em;
+	padding-top: 10px;
+	padding-bottom: 20px;
+}
+.oferts-special__price {
+	display: 1.5em;
+	color: #0170A8;
+	font-weight: bold;
+}
+
+/*-----------------Estilos del footer-----------------*/
+
+.main-footer {
+	background: #222;
+	color: white;
+	padding: 10px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	font-size: .8em;
+}
+.copy {
+	text-align: center;
+	margin: auto;
+	margin-top: 15px;
+}
+.main-footer [class*="icon-"] {
+	color: white;
+	text-decoration: none;
+}
+.main-footer [class*="icon-"]:before {
+	position: relative;
+	top: 3px;
+	right: 5px;
+}
+
+
+
+
+
