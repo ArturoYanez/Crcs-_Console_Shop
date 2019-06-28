@@ -1,10 +1,11 @@
 /*En este archivo, van todos los estilos generales*/
 * {
-	box-sizing: boder-box;
+	box-sizing: border-box;
 }
 body {
 	font-family: "Pt Saans", sans-serif;
 	margin: 0;
+	margin-right: 0;
 	background-color: white;
 }
 /*-----------------Estilos bases mas frecuentes-----------------*/
