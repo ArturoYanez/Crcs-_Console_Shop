@@ -2,7 +2,7 @@
 
 /*-----------------Estilos del header-----------------*/
 
-.main-header {
+.main-h {
 	width: 100%;
 }
 .logo {
@@ -12,17 +12,17 @@
 	font-family: "Mogra", cursive;
 	font-weight: 100;
 }
-.main-header__contactInfo__phone {
+.main-hci_p {
 	background: #0170A8;
 	color: white;
 	margin: 0 auto;
 	padding: 10px;
 }
-.main-header__contactInfo__address {
+.main-hci_a {
 	padding: 10px;
 	margin: 0;
 }
-.main-header [class*="icon-"]:before {
+.main-h [class*="icon-"]:before {
 	position: relative;
 	top: 2px;
 	right: 5px;
@@ -64,7 +64,7 @@
 	background: white;
 	border-radius: 50%;
 }
-.social_icon__link {
+.social_icon_lk {
 	text-decoration: none;
 }
 .menu {
@@ -81,16 +81,16 @@
 	overflow: hidden;
 	transition: height .3s linear;
 }
-.menu__link {
+.menu_lk {
 	display: block;
 	padding: 15px;
 	color: white;
 	text-decoration: none;
 }
-.menu__link:hover {
+.menu_lk:hover {
 	background: #0170A8;
 }
-.menu__link--select {
+.menu_lk--slt {
 	background: #0170A8;
 }
 .mostrar {
@@ -112,12 +112,12 @@
 	z-index: 1000;
 	top: 0;
 }
-.banner__img {
+.banner_img {
 	width: 100%;
 	height: 500px;
 	object-fit: cover;
 }
-.banner__content {
+.banner_cnt {
 	width: 90%;
 	color: white;
 	text-align: center;
@@ -138,20 +138,20 @@
 	padding: 10px;
 	text-align: center;
 }
-.main__Title {
+.main_tit {
 	margin: 1535 0;
 	font-size: 1.8em;
 	font-family: "Mogra", cursive;
 	font-weight: 100
 }
-.main__txt {
+.main_txt {
 	padding: 10px;
 }
-.column__title {
+.column_tit {
 	font-size: 1.3em;
 }
 
-.main__about__description .column:nth-child(2) {
+.main_abt_d .column:nth-child(2) {
 	padding: 10px;
 }
 .btn:hover {
@@ -168,33 +168,33 @@
 	margin: 10 auto;
 	transition: background .3s linear;
 }
-.group__title {
+.group_tit {
 	font-family: "Mogra", cursive;
 	text-align: center;
 	font-weight: 100;
 	font-style: 1.8em;
 	margin: 30px;
 }
-.oferts-special__link {
+.oferts-spl_lk {
 	padding: 0;
 	margin: 0;
 	text-decoration: none;
 	color: black;
 }
-.oferts-special .column {
+.oferts-spl .column {
 	text-align: center;
 	margin-bottom: 30px;
 }
-.oferts-special__img img {
+.oferts-spl_img {
 	margin: auto;
 	max-width: 3500px;
 }
-.oferts-special__title {
+.oferts-spl_tit {
 	font-style: 1.3em;
 	padding-top: 10px;
 	padding-bottom: 20px;
 }
-.oferts-special__price {
+.oferts-spl_pri {
 	display: 1.5em;
 	color: #0170A8;
 	font-weight: bold;
